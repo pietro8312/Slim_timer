@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+#timer{
+    display: grid;
+    height: 80%;
+    width: min-content;
+
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto 30%;
+    grid-template-areas: 
+        "timer timer timer"
+        "start return gear";
+}
+
+#timer span{
+    grid-area: timer;
+    display: flex;
+    color: #fff;
+
+    font-size: 50vh;
+    text-decoration: none;
+}
+
+#timer span *{
+    font-style: normal;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
+
+button svg{
+    height: 50%;
+    width: 100%;
+}
